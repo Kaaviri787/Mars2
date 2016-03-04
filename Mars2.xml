@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="7" y="-20">
+  <block type="controls_whileUntil" id="1" inline="false" x="44" y="6">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
@@ -13,8 +13,8 @@
           <block type="logic_compare" id="4" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="5">
-                <field name="OBJECT">LEFTFRONT</field>
+              <block type="sensor_spectrometer" id="36">
+                <field name="LIGHT">RED</field>
               </block>
             </value>
             <value name="B">
@@ -33,7 +33,7 @@
             </value>
             <value name="BOTHMOVRIGHT">
               <block type="math_number" id="9">
-                <field name="NUM">-95</field>
+                <field name="NUM">50</field>
               </block>
             </value>
           </block>
@@ -42,13 +42,13 @@
           <block type="logic_compare" id="10" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="11">
-                <field name="OBJECT">RIGHTFRONT</field>
+              <block type="sensor_spectrometer" id="51">
+                <field name="LIGHT">RED</field>
               </block>
             </value>
             <value name="B">
               <block type="math_number" id="12">
-                <field name="NUM">75</field>
+                <field name="NUM">95</field>
               </block>
             </value>
           </block>
@@ -57,7 +57,7 @@
           <block type="movement_setmotors" id="13" inline="true">
             <value name="BOTHMOVLEFT">
               <block type="math_number" id="14">
-                <field name="NUM">-100</field>
+                <field name="NUM">50</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
